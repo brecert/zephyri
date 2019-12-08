@@ -1,7 +1,7 @@
 {
   "type": "commonjs",
   "name": "zephyri",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "use-case agnostic router",
   "homepage": "https://github.com/brecert/zephyri#readme",
   "license": "MIT",
@@ -32,7 +32,6 @@
     "rimraf": "^3.0.0",
     "typedoc": "^0.15.3",
     "typescript": "^3.7.2",
-    "zephyri": "link:./"
   },
   "engines": {
     "node": ">=12",
