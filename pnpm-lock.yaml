@@ -15,7 +15,6 @@ devDependencies:
   rimraf: 3.0.0
   typedoc: 0.15.3
   typescript: 3.7.3
-  zephyri: 'link:'
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.5.5:
@@ -5482,7 +5481,7 @@ packages:
   /rollup/1.27.9:
     dependencies:
       '@types/estree': 0.0.40
-      '@types/node': 10.17.6
+      '@types/node': 12.12.14
       acorn: 7.1.0
     dev: true
     hasBin: true
@@ -6595,4 +6594,3 @@ specifiers:
   rimraf: ^3.0.0
   typedoc: ^0.15.3
   typescript: ^3.7.2
-  zephyri: 'link:./'
