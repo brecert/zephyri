@@ -3,6 +3,8 @@ Zephyri
 
 > use-case agnostic router
 
+[docs](https://brecert.github.io/zephyri/)
+
 About
 ==============
 

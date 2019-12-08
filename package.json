@@ -12,7 +12,7 @@
     "test": "pnpm run build && rimraf pkg/package.json && jest --runInBand --coverage",
     "build": "pika build",
     "preversion": "pnpm test",
-    "deploy": "gh-pages -d docs",
+    "deploy": "pnpm run docs && gh-pages -d docs",
     "postpublish": "pnpm run deploy"
   },
   "devDependencies": {
