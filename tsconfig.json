@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "module": "esnext",
+    "strict": true,
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+
+    "lib": [ "esnext", "dom" ],
+
+    "declaration": true,
+    "sourceMap": true,
+    "declarationMap": true,
+
+    "outDir": "lib"
+  }
+}

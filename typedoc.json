@@ -1,0 +1,6 @@
+{
+    "out": "docs",
+    "mode": "file",
+    "name": "router",
+    "readme": "readme.md"
+}

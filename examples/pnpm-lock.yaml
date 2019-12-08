@@ -1,0 +1,12 @@
+devDependencies:
+  '@types/node': 12.12.14
+  zephri: 'link:..'
+lockfileVersion: 5.1
+packages:
+  /@types/node/12.12.14:
+    dev: true
+    resolution:
+      integrity: sha512-u/SJDyXwuihpwjXy7hOOghagLEV1KdAST6syfnOk6QZAMzZuWZqXy5aYYZbh8Jdpd4escVFP0MvftHNDb9pruA==
+specifiers:
+  '@types/node': ^12.12.14
+  zephri: 'link:..'

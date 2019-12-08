@@ -1,0 +1,62 @@
+{
+  "type": "commonjs",
+  "name": "zephyri",
+  "version": "0.1.0",
+  "description": "use-case agnostic router",
+  "homepage": "https://github.com/brecert/zephyri#readme",
+  "license": "MIT",
+  "author": "Bree <11599528+Brecert@users.noreply.github.com> (https://brecert.github.io/)",
+  "repository": "github:brecert/zephyri",
+  "scripts": {
+    "docs": "typedoc src",
+    "test": "pnpm run build && rimraf pkg/package.json && jest --runInBand --coverage",
+    "build": "pika build",
+    "preversion": "pnpm test",
+    "deploy": "gh-pages -d docs",
+    "postpublish": "pnpm run deploy"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-typescript": "^7.7.4",
+    "@babel/register": "^7.7.4",
+    "@pika/cli": "^0.2.0",
+    "@pika/pack": "^0.5.0",
+    "@pika/plugin-build-node": "^0.8.1",
+    "@pika/plugin-build-web": "^0.8.1",
+    "@pika/plugin-ts-standard-pkg": "^0.8.1",
+    "@types/jest": "^24.0.23",
+    "babel-jest": "^24.9.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "gh-pages": "^2.1.1",
+    "jest": "^24.9.0",
+    "rimraf": "^3.0.0",
+    "typedoc": "^0.15.3",
+    "typescript": "^3.7.2",
+    "zephyri": "link:./"
+  },
+  "engines": {
+    "node": ">=12",
+    "pnpm": ">=4"
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-ts-standard-pkg",
+        {
+          "tsconfig": "tsconfig.build.json"
+        }
+      ],
+      [
+        "@pika/plugin-build-node"
+      ],
+      [
+        "@pika/plugin-build-web"
+      ]
+    ]
+  },
+  "files": "pkg/*/**",
+  "source": "pkg/dist-src/index.js",
+  "types": "pkg/dist-types/index.d.ts",
+  "main": "pkg/dist-node/index.js",
+  "module": "pkg/dist-web/index.js"
+}

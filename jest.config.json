@@ -1,0 +1,4 @@
+{
+	"present": "babel-jest",
+	"testEnviroment": "node"
+}
