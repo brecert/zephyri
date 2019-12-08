@@ -9,8 +9,8 @@
   "repository": "github:brecert/zephyri",
   "scripts": {
     "docs": "typedoc src",
-    "test": "pnpm run build && rimraf pkg/package.json && jest --runInBand --coverage",
-    "build": "pika build",
+    "test": "pnpm run build && jest --runInBand --coverage",
+    "build": "pika build && rimraf pkg/package.json && rimraf pkg/README.md",
     "preversion": "pnpm test",
     "deploy": "pnpm run docs && gh-pages -d docs",
     "postpublish": "pnpm run deploy"
@@ -31,7 +31,7 @@
     "jest": "^24.9.0",
     "rimraf": "^3.0.0",
     "typedoc": "^0.15.3",
-    "typescript": "^3.7.2",
+    "typescript": "^3.7.2"
   },
   "engines": {
     "node": ">=12",
