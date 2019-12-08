@@ -53,7 +53,9 @@
 			]
 		]
 	},
-	"files": "pkg/*/**",
+	"files": [
+		"pkg/*/**"
+	],
 	"source": "pkg/dist-src/index.js",
 	"types": "pkg/dist-types/index.d.ts",
 	"main": "pkg/dist-node/index.js",
